@@ -2,7 +2,19 @@ image:
   - Visual Studio 2017
 
 build_script:
-  - set aaa=aaa
+  - set aaa=aaaa
+  - set bbb=bbbb
+  
   - echo original aaa = %aaa%
+  
   - set aaa=
-  - echo empty aaa = %aaa%
+  - echo empty 01 aaa = %aaa%
+  
+  - set "aaa="
+  - echo empty 01 aaa = %aaa%
+
+  - set aaa=%bbb:~0,0%
+  - echo empty 02 aaa = %aaa%
+
+  - set aaa=%aaa:aaaa=%
+  - echo empty 03 aaa = %aaa%
