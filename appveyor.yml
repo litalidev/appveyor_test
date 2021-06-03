@@ -1,5 +1,5 @@
 image:
-  - Visual Studio 2017
+  - Visual Studio 2019
 
 build_script:
   - set aaa=aaaa
@@ -9,6 +9,8 @@ build_script:
   
   - set aaa=
   - echo empty 01 aaa = %aaa%
+  - echo empty 01.1 aaa = $(aaa)
+  
   
   - set "aaa="
   - echo empty 01 aaa = %aaa%
