@@ -16,5 +16,5 @@ build_script:
   - set aaa=%bbb:~0,0%
   - echo empty 02 aaa = %aaa%
 
-  - set aaa=%aaa:aaaa=%
+  - set aaa=%bbb:bbbb=%
   - echo empty 03 aaa = %aaa%
