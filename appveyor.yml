@@ -1,6 +1,12 @@
 image:
   - Visual Studio 2017
 
+environment:
+  matrix:
+    - var1: first
+    
+    - var1: second
+
 build_script:
   - set aaa=aaaa
   - set bbb=bbbb
@@ -24,3 +30,5 @@ build_script:
   
   - echo ccc1=%ccc%
   - echo ccc2=$(ccc)
+
+  - echo Building : %var1%
