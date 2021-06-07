@@ -31,4 +31,5 @@ build_script:
   - echo ccc1=%ccc%
   - echo ccc2=$(ccc)
 
-  - echo Building : %var1%
+  - echo Building  %var1%
+  
